@@ -1,0 +1,149 @@
+/*Variables principales*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(219, 212, 204);
+  color: black;
+  line-height: 1.45;
+}
+
+/*Estilos de Cabecera - header*/
+
+.site-header {
+  background-color: rgb(116, 132, 138);
+  padding: 1.4rem 0 1.25rem;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.site-title {
+  margin: 0 0 0.25rem;
+  font-size: 2.25rem;
+  color: bisque;
+  letter-spacing: -0.5px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.header-top button {
+  border-radius: 8px;
+}
+
+.site-subtitle {
+  margin: 0;
+  color: rgb(21, 28, 31);
+}
+
+/*Estilos de Navegacion*/
+
+.t-contents {
+  margin-top: 1rem;
+  background-color: antiquewhite;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.t-contents h2 {
+  margin: 0;
+}
+
+.t-contents a {
+  color: rgb(21, 28, 31);
+  padding-left: 1.1rem;
+  text-decoration: none;
+}
+
+.t-contents a:hover {
+  color: rgb(103, 124, 133);
+  padding-left: 1.1rem;
+  text-decoration: underline;
+}
+
+/*Seccion principal*/
+
+.section-content {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 1rem;
+  align-items: center;
+  text-align: justify;
+}
+
+.tutorial-section h3 {
+  color: rgb(21, 28, 31);
+  margin: 0 0 0.5rem;
+}
+
+.section-content img {
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  width: 100%;
+  height: 110px;
+}
+
+/*Seccion Footer*/
+
+.site-footer {
+  border-top: 1px solid rgb(103, 124, 133);
+  background: transparent;
+  padding: 1rem 0 2rem;
+}
+
+.site-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/*Estilos boton modo oscuro - modo claro*/
+#btn-tema{
+  background-color: wheat;
+  color: gray;
+  border: 1px solid gray;
+  padding: 8px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+#btn-tema:hover {
+  background-color: rgb(167, 104, 59);
+  color: black;
+}
+
+.tema.oscuro{
+  --bg: #
+}
+
+@media(max-width: 600px){
+  .section-content{
+    grid-template-columns: 1fr;
+  }
+  .site-footer .container{
+    flex-direction: column;
+  }
+
+  .site-header .header-top{
+    flex-direction: column;
+    text-align: center;
+  }
+  .site-subtitle{
+    text-align: center;
+    padding: 10px;
+  }
+}
