@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Como vender tu Casa</title>
+    <link rel="icon" href="./img/Icono.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-top">
+                <h1 class="site-title">Contacto</h1>
+                <div class="header-actions">
+                    <a href="index.html" class="btn-color">Volver</a>
+                    <button type="button" id="btn-tema" onclick="cambiarTema()">Modo Oscuro</button>
+                </div>
+            </div>
+            <p class="site-subtitle">"Un tutorial para que puedas vender tu
+                casa facilmente"</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="t-contents">
+            <h2>Envíanos un mensaje</h2>
+            <p>Si tienes dudas sobre cómo vender tu propiedad, contáctanos.</p>
+
+            <form id="form-contacto" class="contacto-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre...">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required
+                        placeholder="¿En qué podemos ayudarte?"></textarea>
+                </div>
+
+                <button type="submit" class="btn-color">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-left">
+                <p>@-2026 Mini Turotial - Hecho con
+                    👍</p>
+            </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

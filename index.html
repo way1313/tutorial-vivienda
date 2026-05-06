@@ -1,121 +1,135 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ventas de Casas</title>
-        <link rel="stylesheet" href="./style.css">
-    </head>
-    <body>
-        <!--INICIO SECCION CABECER-->
 
-        <header class="site-header" id="top">
-            <div class="container">
-                <div class="header-top">
-                    <h1 class="site-title">Como vender una Casa</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como vender tu Casa</title>
+    <link rel="icon" href="./img/Icono.png" type="image/png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!--INICIO SECCION CABECER-->
+
+    <header class="site-header" id="top">
+        <div class="container">
+            <div class="header-top">
+
+                <h1 class="site-title">Como vender tu Casa</h1>
+                <div class="header-actions">
+                    <a href="./contacto.html" class="btn-color">Contacto</a>
+
                     <button type="button" id="btn-tema" onclick="cambiarTema()">Modo Oscuro</button>
                 </div>
-                <p class="site-subtitle">un tutorial para que puedas vender tu
-                    casa facilmente</p>
             </div>
-        </header>
+            <p class="site-subtitle">"Un tutorial para que puedas vender tu
+                casa facilmente"</p>
+        </div>
+    </header>
 
-        <!--MENU DE NAVEGACION-->
+    <!--MENU DE NAVEGACION-->
 
-        <nav class="t-contents container">
-            <h2>Contenido</h2>
-            <ol>
-                <li><a href="#casa">Seleccion de casa</a></li>
-                <li><a href="#Habitaciones">Habitaciones</a></li>
-                <li><a href="#Ubicacion">Ubicacion</a></li>
-                <li><a href="#Modelos">Modelos</a></li>
-                <li><a href="#Entrega">Entrega de Casa</a></li>
-            </ol>
-        </nav>
+    <nav class="t-contents container">
+        <h2>Contenido</h2>
+        <ol>
+            <li><a href="#casa">Seleccion de casa</a></li>
+            <li><a href="#Habitaciones">Habitaciones</a></li>
+            <li><a href="#Ubicacion">Ubicacion</a></li>
+            <li><a href="#Modelos">Modelos</a></li>
+            <li><a href="#Entrega">Entrega de Casa</a></li>
+        </ol>
+    </nav>
 
-        <!--SECCION PRINCIPAL-->
+    <!--SECCION PRINCIPAL-->
 
-        <main class="container">
-            <!-- Tarjetas -->
-            <section class="tutorial-section" id="casa">
-                <h3>1. Seleccion de casa</h3>
-                <div class="section-content">
-                    <img src="./img/anuncio1.jpg" alt>
-                    <div>
-                        <p>Incluye una guía rápida o un test breve titulado
-                            "¿Qué tipo de casa se adapta a tu estilo de vida?",
-                            que
-                            ayude al cliente a filtrar opciones basadas en su
-                            etapa de
-                            vida (soltero, pareja joven, familia grande).</p>
-                    </div>
+    <main class="container">
+        <!-- Tarjetas -->
+        <section class="tutorial-section" id="casa">
+            <h3>1. Seleccion de casa</h3>
+            <div class="section-content">
+                <img src="./img/anuncio1.jpg" alt>
+                <div>
+                    <p>Incluye una guía rápida o un test breve titulado
+                        "¿Qué tipo de casa se adapta a tu estilo de vida?",
+                        que
+                        ayude al cliente a filtrar opciones basadas en su
+                        etapa de
+                        vida (soltero, pareja joven, familia grande).</p>
                 </div>
-            </section>
-            <!----------------------------------------------------------------------->
-            <section class="tutorial-section" id="Habitaciones">
-                <h3>2. Habitaciones</h3>
-                <div class="section-content">
-                    <img src="./img/anuncio2.jpg" alt>
-                    <div>
-                        <p>Incluye planos interactivos donde el usuario pueda
-                            visualizar cómo se distribuye el mobiliario en cada
-                            habitación, ayudándoles a imaginar la funcionalidad
-                            real de los metros cuadrados.</p>
-                    </div>
-                </div>
-            </section>
-            <!----------------------------------------------------------------------->
-            <section class="tutorial-section" id="Ubicacion">
-                <h3>3. Ubicacion</h3>
-                <div class="section-content">
-                    <img src="./img/anuncio3.jpg" alt>
-                    <div>
-                        <p>Incluye un mapa interactivo con puntos de interés:
-                            colegios, parques, hospitales, supermercados y rutas
-                            de transporte.</p>
-                    </div>
-                </div>
-            </section>
-            <!----------------------------------------------------------------------->
-            <section class="tutorial-section" id="Modelos">
-                <h3>4. Modelos</h3>
-                <div class="section-content">
-                    <img src="./img/anuncio4.jpg" alt>
-                    <div>
-                        <p>Crea una tabla comparativa de acabados (tipos de
-                            piso, grifería, iluminación) para que el cliente
-                            sienta la calidad de los materiales sin necesidad de
-                            estar presente físicamente.</p>
-                    </div>
-                </div>
-            </section>
-            <!----------------------------------------------------------------------->
-            <section class="tutorial-section" id="Entrega">
-                <h3>5. Entrega de Casa</h3>
-                <div class="section-content">
-                    <img src="./img/anuncio5.jpg" alt>
-                    <div>
-                        <p>Incluye una sección de "Preguntas Frecuentes" sobre
-                            garantías de construcción, servicios postventa y un
-                            cronograma actualizado de obra para que el cliente
-                            sepa en qué estado se encuentra su inversión en
-                            tiempo real.</p>
-                    </div>
-                </div>
-            </section>
-
-            <p>"La mejor forma de vender no es presionar, sino hacer que el cliente se sienta protagonista de su propia decisión."</p>
-        </main>
-
-        <!-- SECCION FOOTER -->
-
-        <footer class="site-footer">
-            <div class="container">
-                <div class="footer-left"><p>@-2026 Mini Turotial - Hecho con
-                        👍</p></div>
-                <div class="footer-right"><a href="#top">Volver Arriba</a></div>
             </div>
-        </footer>
-        <script src="./script.js"></script>
-    </body>
+        </section>
+        <!----------------------------------------------------------------------->
+        <section class="tutorial-section" id="Habitaciones">
+            <h3>2. Habitaciones</h3>
+            <div class="section-content">
+                <img src="./img/anuncio2.jpg" alt>
+                <div>
+                    <p>Incluye planos interactivos donde el usuario pueda
+                        visualizar cómo se distribuye el mobiliario en cada
+                        habitación, ayudándoles a imaginar la funcionalidad
+                        real de los metros cuadrados.</p>
+                </div>
+            </div>
+        </section>
+        <!----------------------------------------------------------------------->
+        <section class="tutorial-section" id="Ubicacion">
+            <h3>3. Ubicacion</h3>
+            <div class="section-content">
+                <img src="./img/anuncio3.jpg" alt>
+                <div>
+                    <p>Incluye un mapa interactivo con puntos de interés:
+                        colegios, parques, hospitales, supermercados y rutas
+                        de transporte.</p>
+                </div>
+            </div>
+        </section>
+        <!----------------------------------------------------------------------->
+        <section class="tutorial-section" id="Modelos">
+            <h3>4. Modelos</h3>
+            <div class="section-content">
+                <img src="./img/anuncio4.jpg" alt>
+                <div>
+                    <p>Crea una tabla comparativa de acabados (tipos de
+                        piso, grifería, iluminación) para que el cliente
+                        sienta la calidad de los materiales sin necesidad de
+                        estar presente físicamente.</p>
+                </div>
+            </div>
+        </section>
+        <!----------------------------------------------------------------------->
+        <section class="tutorial-section" id="Entrega">
+            <h3>5. Entrega de Casa</h3>
+            <div class="section-content">
+                <img src="./img/anuncio5.jpg" alt>
+                <div>
+                    <p>Incluye una sección de "Preguntas Frecuentes" sobre
+                        garantías de construcción, servicios postventa y un
+                        cronograma actualizado de obra para que el cliente
+                        sepa en qué estado se encuentra su inversión en
+                        tiempo real.</p>
+                </div>
+            </div>
+        </section>
+
+        <p>"La mejor forma de vender no es presionar, sino hacer que el cliente se sienta protagonista de su propia
+            decisión."</p>
+    </main>
+
+    <!-- SECCION FOOTER -->
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-left">
+                <p>@-2026 Mini Turotial - Hecho con
+                    👍</p>
+            </div>
+            <div>
+                <a href="#top">Volver Arriba</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
 </html>

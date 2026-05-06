@@ -1,34 +1,51 @@
-/*Variables principales*/
+:root {
+  /*Variables principales*/
+  --bg: #9cc5d3;
+  --card: #c0d7d6;
+  --header: #267272;
+  --hover: #238782;
+  --accent: #5ac5c0;
+  --gris10: #1b1b1f;
+  --btn: #2a4a58;
+  /*Color principal del texto en tema claro*/
+  --gris20: #909292;
+  /*color secundario / mascara */
+  --max-width: 980px;
+  --radius: 12px;
+  --container-padding: 1rem;
+  --font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 * {
   box-sizing: border-box;
+
 }
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(219, 212, 204);
-  color: black;
+  font-family: var(--font);
+  background-color: var(--bg);
+  color: var(--gris10);
   line-height: 1.45;
 }
 
 /*Estilos de Cabecera - header*/
 
 .site-header {
-  background-color: rgb(116, 132, 138);
+  background-color: var(--header);
   padding: 1.4rem 0 1.25rem;
 }
 
 .container {
-  max-width: 980px;
+  max-width: var(--max-width);
   margin: 0 auto;
-  padding: 1rem;
+  padding: var(--container-padding);
 }
 
 .site-title {
   margin: 0 0 0.25rem;
   font-size: 2.25rem;
-  color: bisque;
+  color: var(--accent);
   letter-spacing: -0.5px;
 }
 
@@ -43,18 +60,23 @@ body {
   border-radius: 8px;
 }
 
+.header-top a {
+  text-decoration: none;
+}
+
+
 .site-subtitle {
   margin: 0;
-  color: rgb(21, 28, 31);
+  color: var(--gris10);
 }
 
 /*Estilos de Navegacion*/
 
 .t-contents {
   margin-top: 1rem;
-  background-color: antiquewhite;
-  border-radius: 12px;
-  padding: 1rem;
+  background-color: var(--card);
+  border-radius: var(--radius);
+  padding: var(--container-padding);
 }
 
 .t-contents h2 {
@@ -62,13 +84,13 @@ body {
 }
 
 .t-contents a {
-  color: rgb(21, 28, 31);
+  color: var(--gris10);
   padding-left: 1.1rem;
   text-decoration: none;
 }
 
 .t-contents a:hover {
-  color: rgb(103, 124, 133);
+  color: var(--gris20);
   padding-left: 1.1rem;
   text-decoration: underline;
 }
@@ -78,30 +100,70 @@ body {
 .section-content {
   display: grid;
   grid-template-columns: 160px 1fr;
-  gap: 1rem;
+  gap: var(--container-padding);
   align-items: center;
   text-align: justify;
 }
 
 .tutorial-section h3 {
-  color: rgb(21, 28, 31);
+  color: var(--gris10);
   margin: 0 0 0.5rem;
 }
 
 .section-content img {
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: var(--radius);
   display: block;
   width: 100%;
   height: 110px;
 }
 
+
+.btn-color {
+  background-color: var(--btn);
+  color: var(--card);
+  border: 1px solid var(--gris20);
+  padding: 8px 30px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  
+}
+
+.btn-color:hover {
+  background-color: var(--card);
+  color: var(--gris10);
+}
+
+
+/*Estilos boton modo oscuro - modo claro*/
+#btn-tema {
+  background-color: var(--btn);
+  color: var(--card);
+  border: 1px solid var(--gris20);
+  padding: 11px 16px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  
+}
+
+#btn-tema:hover {
+  background-color: var(--card);
+  color: var(--gris10);
+}
+
+.header-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
 /*Seccion Footer*/
 
 .site-footer {
-  border-top: 1px solid rgb(103, 124, 133);
+  border-top: 1px solid var(--gris20);
   background: transparent;
   padding: 1rem 0 2rem;
+  
 }
 
 .site-footer .container {
@@ -109,40 +171,98 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 0.75rem;
+  text-decoration: none;
 }
 
-/*Estilos boton modo oscuro - modo claro*/
-#btn-tema{
-  background-color: wheat;
-  color: gray;
-  border: 1px solid gray;
-  padding: 8px 16px;
-  border-radius: 12px;
-  cursor: pointer;
+.site-footer a {
+  color: var(--gris10);
+  padding-left: 1.1rem;
+  text-decoration: none;
 }
 
-#btn-tema:hover {
-  background-color: rgb(167, 104, 59);
-  color: black;
+.site-footer a:hover {
+  color: var(--gris20);
+  padding-left: 1.1rem;
+  text-decoration: underline;
 }
 
-.tema.oscuro{
-  --bg: #
+
+.tema-oscuro {
+  --bg: #282c2e;
+  --card: #336c6c;
+  --header: #0d373b;
+  --hover: #376261;
+  --accent: #386e6b;
+  --gris10: #8c8c8c;
+  --btn: #354045;
 }
 
-@media(max-width: 600px){
-  .section-content{
+/* Estilos específicos del formulario de contacto */
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: var(--header); /* Usamos el color del header para los títulos */
+}
+
+.form-group input, 
+.form-group textarea {
+    padding: 0.8rem;
+    border: 1px solid var(--gris20);
+    border-radius: var(--radius);
+    background-color: white;
+    font-family: var(--font);
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+/* En modo oscuro, ajustamos los inputs */
+.tema-oscuro .form-group input, 
+.tema-oscuro .form-group textarea {
+    background-color: var(--bg);
+    color: white;
+    border-color: var(--btn);
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 5px var(--accent);
+}
+
+/* Ajuste para el botón enviar */
+.contacto-form .btn-color {
+    align-self: flex-start;
+    padding: 12px 40px;
+}
+
+@media(max-width: 600px) {
+  .section-content {
     grid-template-columns: 1fr;
   }
-  .site-footer .container{
+
+  .site-footer .container {
     flex-direction: column;
   }
 
-  .site-header .header-top{
+  .site-header .header-top {
     flex-direction: column;
     text-align: center;
   }
-  .site-subtitle{
+
+  .site-subtitle {
     text-align: center;
     padding: 10px;
   }
